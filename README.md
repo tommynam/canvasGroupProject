@@ -11,21 +11,21 @@ Canvas Group Project for - Tommy, Chili, Candice (Jamie?)
 ##    Ex.) [x] HTML Backbone - Tommy
 ##    Ex.) [x] Drawing Rectangle - Chilli
 
-[] HTML Backbone
-[] CSS Styling
-[] Color Picker
-[] Change line thickness
-[] Drawing Rectangle
-[] Drawing Cirlce
-[] Drawing Straight Line
-[] Drawing Curved Line
-[] Eraser (Point and drag)
-[] Undo-Redo Button
-[] Insert Text
-[] Save Image Button (Download to Computer)
-[] Filters
-[] Fill Bucket
-[] Canvas Linked to FireBase for Download 
-[] Zoom In - Zoom Out
-[] Drag and drop / Select Function
-[] Deploy on Surge.Sh on Github Pages
+[] HTML Backbone                              - Candice
+[] CSS Styling                                - Candice
+[] Color Picker                               - Candice
+[] Change line thickness                      - Candice
+[] Drawing Rectangle                          - Candice
+[] Drawing Cirlce                             - Candice
+[] Drawing Straight Line                      - Chili
+[] Drawing Curved Line                        - Tommy
+[] Eraser (Point and drag)                    - Tommy
+[] Undo-Redo Button                           - Tommy
+[] Insert Text                                - Chili 
+[] Save Image Button (Download to Computer)   - Tommy
+[] Filters                                    - Tommy 
+[] Fill Bucket                                - Chili
+[] Canvas Linked to FireBase for Download     - Tommy
+[] Zoom In - Zoom Out                         - Chili
+[] Drag and drop / Select Function            - Tommy
+[] Deploy on Surge.Sh on Github Pages         - Tommmy
