@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="no-js">
   <head>
@@ -6,79 +5,279 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
     <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-   
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://dl.dropbox.com/s/hk7c6wqd8cgm8i4/officialstyles.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/style.css"
+    />
   </head>
-  <body class="container">
-    <h1>Canvas Application</h1>
-    <div id="canvas-container">
-      <canvas
-        id="canvas-real"
-        class="canvas"
-        width="1280px"
-        height="720px"
-      ></canvas>
-      <canvas
-        id="canvas-draft"
-        class="canvas"
-        width="1280px"
-        height="720px"
-      ></canvas>
+
+
+
+  <body>
+    <div class="contain">
+      <div class="buttonAll">
+        <div class="logo-div">
+          <h1>CANVAS</h1>
+        </div>
+        <div class="mainbutton">
+          <!-- The drawing line button  -->
+          <div class="button" id="btn-drawing-line">
+            <img
+              class="img-fluid icons btn-active"
+              src="img/canvasicons-pencil.png"
+              alt="line"
+              id="drawing-line"
+              data-toggle="tooltip" data-placement="top" title="Pencil"
+            />
+          </div>
+          <!-- The Brush button  -->
+          <div class="button" id="btn-drawing-brush">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-paintcan.png"
+              alt="strline"
+              id="drawing-brush"
+              data-toggle="tooltip" data-placement="top" title="Spray Can"
+            />
+          </div> 
+          <!-- The draw-stamping button  -->
+          <div class="button" id="btn-stamping">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-stamp.png"
+              alt="stamping"
+              id="stamping"
+              data-toggle="tooltip" data-placement="top" title="Stamp"
+            />
+          </div>  
+          <!-- The Stright-Line button  -->
+          <div class="button" id="btn-strline">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-stright.png"
+              alt="strline"
+              id="strline"
+              data-toggle="tooltip" data-placement="top" title="Stright-Line"
+            />
+          </div>  
+          <!-- The drawing rectangle button  -->
+          <div class="button" id="btn-drawing-rectangle">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-rect.png"
+              alt="rectangle"
+              id="drawing-rectangle"
+              data-toggle="tooltip" data-placement="top" title="Square"
+            />
+          </div>  
+          <!-- The drawing circle button  -->
+          <div class="button" id="btn-drawing-circle">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-circle.png"
+              alt="cicle"
+              id="drawing-circle"
+              data-toggle="tooltip" data-placement="top" title="Oval"
+            />
+          </div>
+          <!-- The drawing arc button  -->
+          <div class="button" id="btn-drawing-arc">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-arc.png"
+              alt="arc"
+              id="drawing-arc"
+              data-toggle="tooltip" data-placement="top" title="Arc"
+            />
+          </div>
+          <!-- The drawing bezier curve button  -->
+          <div class="button" id="btn-drawing-bezier">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-bezier.png"
+              alt="bezier-curve"
+              id="drawing-bezier-curve"
+              data-toggle="tooltip" data-placement="top" title="Bezier Curve"
+            />
+          </div> 
+          <!-- The Polygon button  -->
+          <div class="button" id="btn-drawing-polygon">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-polygon.png"
+              alt="polygon"
+              id="drawing-polygon"
+              data-toggle="tooltip" data-placement="top" title="Regular Polygon"
+            />
+          </div>
+          <!-- The Irregular Polygon button  -->
+          <div class="button" id="btn-drawing-irregular-polygon">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-irregular-polygon.png"
+              alt="polygon"
+              id="drawing-irregular-polygon"
+              data-toggle="tooltip" data-placement="top" title="Irregular Polygon"
+            />
+          </div>
+          <!-- The Text button  -->
+          <div class="button" id="btn-text">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-text.png"
+              alt="text"
+              id="text"
+              data-toggle="tooltip" data-placement="top" title="Text"
+            />
+          </div> 
+          <!-- The download button -->
+          <div class="button" id="btn-download">
+            <img 
+            class="img-fluid icons-exception" 
+            src="img/canvasicons-download.png"
+            alt="download"
+            id="download"
+            data-toggle="tooltip" data-placement="top" title="Download Canvas"
+            />
+          </div> 
+        <!-- The Upload button -->
+        <div class="button" id="btn-upload">
+          <img 
+          class="img-fluid icons-exception" 
+          src="img/canvasicons-upload.png"
+          alt="upload"
+          id="imageLoader"
+          data-toggle="tooltip" data-placement="top" title="Upload Image"
+          />
+        </div> 
+        <!-- The Undo -->
+        <div class="button" id="btn-undo">
+          <img 
+          class="img-fluid icons-exception" 
+          src="img/canvasicons-undo.png"
+          alt="upload"
+          id="undo"
+          data-toggle="tooltip" data-placement="top" title="Undo"
+          />
+        </div> 
+        <!-- The Redo button -->
+        <div class="button" id="btn-redo">
+          <img 
+          class="img-fluid icons-exception" 
+          src="img/canvasicons-redo.png"
+          alt="upload"
+          id="redo"
+          data-toggle="tooltip" data-placement="top" title="Redo"
+          />
+        </div> 
+          <!-- Fill -->
+          <div class="button" id="btn-fill">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-bucket.png"
+              alt="fill"
+              id="fill"
+              data-toggle="tooltip" data-placement="top" title="Bucket Fill"
+            />
+          </div>  
+        <!-- The eraser button  -->
+        <div class="button" id="btn-eraser">
+          <img
+            class="img-fluid icons"
+            src="img/canvasicons-eraser.png"
+            alt="eraser"
+            id="eraser"
+            data-toggle="tooltip" data-placement="top" title="Eraser"
+          />
+        </div> 
+          <!-- UTILITIES -->
+          <!-- Clear All -->
+          <div class="button" id="btn-clear-canvas">
+            <img
+              class="img-fluid icons-exception"
+              src="img/canvasicons-clear.png"
+              alt="clear-canvas"
+              id="clear-canvas"
+              data-toggle="tooltip" data-placement="top" title="Clear Canvas"
+            />
+          </div>
+        </div>
+          <!-- Potential for more -->
+      </div>
+
+      <div class="container" id="canvas-container">
+        <canvas
+          id="canvas"
+          class="canvas"
+          width="950px"
+          height="520px"
+        ></canvas>
+        <canvas
+          id="canvas-draft"
+          class="canvas"
+          width="950px"
+          height="520px"
+        ></canvas>
+        <input id="textInput" name="inputField" value="" style="display: none"></input>
+      </div>
     </div>
-    <div class="buttons">
-      <!-- The drawing rectangle button  -->
-      <span class="btn btn-primary fa fa-square" id="drawing-rectangle"
-        >Draw Rectangle</span
-      >
-      <!-- The drawing line button  -->
-      <span class="btn btn-info fa fa-paint-brush" id="drawing-line"
-        >Draw Line</span
-      > 
-      <!-- jQuery -->
-      <script
+
+
+
+    <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
-    <!-- The drawing functionality  -->
+
     <script
-      src="./javascript/canvas-common.js"
-      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Mouse Methods -->
+    <script
+      src="./javascript/mouseMethods.js"
       async
       defer
     ></script>
 
-    <!-- The drawing line functionality  -->
+    <!-- Line Function -->
     <script
-      src="./javascript/drawing-line.js"
-      type="text/javascript"
+      src="./javascript/lineFunction.js"
       async
       defer
     ></script>
-    <!-- The drawing rectangle functionality  -->
+
+    <!-- Rectangle Function -->
     <script
-      src="./javascript/drawing-rectangle.js"
-      type="text/javascript"
       async
       defer
+      src="./javascript/rectFunction.js"
     ></script>
-    <script type="text/javascript">
-    $(()=>{
-      currentFunction =  new DrawingLine(contextReal)
-      $("#drawing-rectangle").click(() => {
-        currentFunction = new DrawingRectangle(contextReal, contextDraft);
-      });
-      $("#drawing-line").click(() => {
-        currentFunction = new DrawingLine(contextReal);
-      });  
-    })
-    </script>
   </body>
+
+
+
 </html>

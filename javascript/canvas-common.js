@@ -3,7 +3,7 @@
  * ==================================
  ***********************************************/
 
-let canvasReal = document.getElementById("canvas-real");
+let canvasReal = document.getElementById("canvas");
 let contextReal = canvasReal.getContext("2d");
 let canvasDraft = document.getElementById("canvas-draft");
 let contextDraft = canvasDraft.getContext("2d");

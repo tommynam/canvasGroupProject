@@ -1,18 +1,106 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.contain {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px;
+  background-color: black;
+}
+
 .canvas {
-  border: 1px black dotted;
+  border: 1px #302f51 solid;
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px 0px rgb(0 0 0 / 30%);
+}
+
+#canvas-container {
+  height: 720px;
+  margin: 20px 0px 0px 10px;
+  padding: 0px;
+  justify-content: start;
+}
+
+#canvas{
+  background-color: white;
 }
 
 #canvas-draft {
   background-color: transparent;
 }
-body {
-  overflow: hidden;
+
+.mainbutton {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 0.5em;
+  row-gap: 1em;
+  background-color: gray;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 15px 20px 0px 20px;
+  padding: 15px 10px;
+  box-shadow: 2px 2px 4px 0px rgb(0 0 0 / 50%);
 }
-#canvas-container {
-  height: 720px;
+
+.buttonAll {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 300px;
+}
+
+.logo-div {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px 0px rgb(0 0 0 / 50%);
+  padding: 10px 10px;
+  margin: 10px 20px 0px 20px;
+}
+
+.buttonAll {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 300px;
+}
+
+.button {
+  box-shadow: 4px 4px 4px 0px rgb(0 0 0 / 80%);
+}
+
+.mainbutton .icons {
+  /* #clear-canvas/#download/#Bucket not included, intentional */
+  width: 45px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  border: 3px white solid;
+}
+
+.icons-exception {
+  width: 45px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  border: 3px white solid;
+}
+
+.btn-active {
+  border: 4px #7510f7 solid !important;
+}
+
+select {
+  width: 45px;
 }
