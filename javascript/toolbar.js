@@ -40,4 +40,7 @@ $(() => {
   $("#fill").click(() => {
     currentFunction = new Fill(contextReal);
   });
+  $("#download").click(() => {
+    currentFunction = new Download();
+  })
 });

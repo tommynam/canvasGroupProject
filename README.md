@@ -1,5 +1,5 @@
 # canvasGroupProject
-Canvas Group Project for - Tommy, Chili, Candice (Jamie?)
+Canvas Group Project for - Tommy, Chili, Candice
 
 
 
@@ -19,15 +19,14 @@ Canvas Group Project for - Tommy, Chili, Candice (Jamie?)
 [X] Drawing Cirlce                             - Candice
 [X] Drawing Straight Line                      - Chili
 [] Drawing Curved Line                        - Tommy
-[] Eraser (Point and drag)                    - Tommy
+[x] Eraser (Point and drag)                    - Tommy
 [X] Undo-Redo Button                           - Candice
 [X] Insert Text                                - Chili 
-[] Save Image Button (Download to Computer)   - Tommy
+[x] Save Image Button (Download to Computer)   - Tommy
 [] Filters                                    - Tommy 
 [X] Fill Bucket                                - Chili
 [] Eyedrop(pick up colors)                    - Tommy
 [x] Download Image                             - Candice
 [] Canvas Linked to FireBase for Download     - Tommy
-[] Zoom In - Zoom Out                         - Chili
 [] Drag and drop / Select Function            - Tommy
 [] Deploy on Surge.Sh on Github Pages         - Tommmy
