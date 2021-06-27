@@ -3,12 +3,16 @@
  * ==================================
  ***********************************************/
 
-let canvasReal = document.getElementById("canvas");
+let canvasReal = document.getElementById("canvas-real");
 let contextReal = canvasReal.getContext("2d");
 let canvasDraft = document.getElementById("canvas-draft");
 let contextDraft = canvasDraft.getContext("2d");
 let currentFunction;
 let dragging = false;
+let regularFix = false;
+let centerFix = false;
+let fillStyle = false;
+let resetDrawing = false;
 
 $("#canvas-draft").mousedown(function (e) {
   let mouseX = e.offsetX;
@@ -33,6 +37,12 @@ $("#canvas-draft").mouseup(function (e) {
   currentFunction.onMouseUp([mouseX, mouseY], e);
 });
 
+$("#textInput").keypress(function (e) {
+  if (e.which == 13) {
+    currentFunction.onKeyPress();
+  }
+});
+
 $("#canvas-draft").mouseleave(function (e) {
   dragging = false;
   let mouseX = e.offsetX;
@@ -46,8 +56,38 @@ $("#canvas-draft").mouseenter(function (e) {
   currentFunction.onMouseEnter([mouseX, mouseY], e);
 });
 
-/** # Class (all classes will have these methods) #
-/*  ====================== */
+window.addEventListener("keydown", (e) => {
+  if (e.key == "Escape") {
+    resetDrawing = true;
+    currentFunction.reset();
+  }
+  if (e.key == "Shift") {
+    regularFix = true;
+  }
+  if (e.key == "Meta" || e.key == "Control") {
+    centerFix = true;
+  }
+  if (e.key == "Alt" || e.key == "c") {
+    fillStyle = true;
+  }
+
+  if (e.key == "Enter") {
+    currentFunction.join();
+  }
+});
+
+window.addEventListener("keyup", (e) => {
+  if (e.key == "Shift") {
+    regularFix = false;
+  }
+  if (e.key == "Meta" || e.key == "Control") {
+    centerFix = false;
+  }
+  if (e.key == "Alt" || e.key == "c") {
+    fillStyle = false;
+  }
+});
+
 class PaintFunction {
   constructor() {}
   onMouseDown() {}
@@ -56,4 +96,10 @@ class PaintFunction {
   onMouseUp() {}
   onMouseLeave() {}
   onMouseEnter() {}
+  onKeyPress() {}
+  color() {}
 }
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});

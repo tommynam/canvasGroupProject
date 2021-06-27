@@ -15,11 +15,11 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link
+    <!--link
       rel="stylesheet"
       type="text/css"
       href="https://dl.dropbox.com/s/hk7c6wqd8cgm8i4/officialstyles.css"
-    />
+    /-->
     <link
       rel="stylesheet"
       type="text/css"
@@ -33,11 +33,11 @@
     <div class="contain">
       <div class="buttonAll">
         <div class="logo-div">
-          <h1>CANVAS</h1>
+          <h1 class="logo">CANVAS</h1>
         </div>
         <div class="mainbutton">
           <!-- The drawing line button  -->
-          <div class="button" id="btn-drawing-line">
+          <div class="button">
             <img
               class="img-fluid icons btn-active"
               src="img/canvasicons-pencil.png"
@@ -219,11 +219,52 @@
           </div>
         </div>
           <!-- Potential for more -->
+          <div class="utility-button">
+            <!-- Color Selectors -->
+            <label for="strokecolor">Stroke Color: </label>
+            <input
+              type="color"
+              id="stroke-color"
+              name="strokecolor"
+              value="#ff4444"
+            />
+            <label for="fillcolor">Fill Color: </label>
+            <input
+              type="color"
+              id="fill-color"
+              name="fillcolor"
+              value="#00008B"
+            />
+              <!-- Stroke Size -->
+              <label for="stroke-size">Stroke Size</label>
+              <select id="stroke-size">
+                <option value="1">XS</option>
+                <option value="3">S</option>
+                <option value="5" selected>M</option>
+                <option value="9">L</option>
+                <option value="15">XL</option>
+                <option value="25">XXL</option>
+              </select>
+              <!-- text Size -->
+              <label for="text-size">Text Size</label>
+              <select id="text-size">
+                <option value="9">XS</option>
+                <option value="18">S</option>
+                <option value="24" selected>M</option>
+                <option value="30">L</option>
+                <option value="48">XL</option>
+                <option value="64">XXL</option>>
+              </select>
+              <!-- Polygon Sides -->
+              <label for="poly-sides">Polygon Sides</label>
+              <input type="number" id="poly-sides" name="Polygon Sides" min="1" max="999" value="5">
+            <input type="file" id="upload" name="imageLoader"style="display: none" size="10"/> 
+            </div>
       </div>
 
       <div class="container" id="canvas-container">
         <canvas
-          id="canvas"
+          id="canvas-real"
           class="canvas"
           width="950px"
           height="520px"
@@ -238,46 +279,53 @@
       </div>
     </div>
 
-
-
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Drawing functionality  -->
+  <script src="./javascript/canvas-common.js" type="text/javascript" async defer></script>
+  <!-- Canvas Utilities -->
+  <script src="./javascript/utilities.js" type="text/javascript" async defer></script>
+  <!-- Line -->
+  <script src="./javascript/drawing-line.js" type="text/javascript" async defer></script>
+  <!-- Stright-line -->
+  <script src="./javascript/str-line.js" type="text/javascript" async defer></script>
+  <!-- Rectangle -->
+  <script src="./javascript/drawing-rectangle.js" type="text/javascript" async defer></script>
+  <!-- Polygon -->
+  <script src="./javascript/drawing-polygon.js" type="text/javascript" async defer></script>
+  <!-- Irregular Polygon -->
+  <script src="./javascript/drawing-irregular-polygon.js" type="text/javascript" async defer></script>
+  <!-- Arc -->
+  <script src="./javascript/drawing-arc.js" type="text/javascript" async defer></script>
+  <!-- Bezier curve -->
+  <script src="./javascript/drawing-bezier-curve.js" type="text/javascript" async defer></script>
+  <!-- Circle -->
+  <script src="./javascript/drawing-irregular-circle.js" type="text/javascript" async defer></script>
+    <!-- stamping function -->
     <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
+    src="./javascript/drawing-stamping.js"
+    type="text/javascript"
+    async
+    defer
+  ></script>
+  <!-- Brush -->
+  <script src="./javascript/drawing-brush.js" type="text/javascript" async defer></script>
+  <!-- Input Text -->
+  <script src="./javascript/text.js" type="text/javascript" async defer></script>
+  <!-- Eraser -->
+  <script src="./javascript/eraser.js" type="text/javascript" async defer></script>
+  <!-- Fill -->
+  <script src="./javascript/fill.js" type="text/javascript" async defer></script>
+  <!-- Undo -->
+  <script src="./javascript/undo.js" type="text/javascript" async defer></script>
+  <!-- Upload -->
+  <script src="./javascript/upload.js" type="text/javascript" async defer></script>
+  <!-- Toolbar -->
+  <script src="./javascript/toolbar.js" type="text/javascript" async defer></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Mouse Methods -->
-    <script
-      src="./javascript/mouseMethods.js"
-      async
-      defer
-    ></script>
-
-    <!-- Line Function -->
-    <script
-      src="./javascript/lineFunction.js"
-      async
-      defer
-    ></script>
-
-    <!-- Rectangle Function -->
-    <script
-      async
-      defer
-      src="./javascript/rectFunction.js"
-    ></script>
-  </body>
-
-
+</body>
 
 </html>
