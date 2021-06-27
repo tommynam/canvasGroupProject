@@ -46,26 +46,6 @@
               data-toggle="tooltip" data-placement="top" title="Pencil"
             />
           </div>
-          <!-- The Brush button  -->
-          <div class="button" id="btn-drawing-brush">
-            <img
-              class="img-fluid icons"
-              src="img/canvasicons-paintcan.png"
-              alt="strline"
-              id="drawing-brush"
-              data-toggle="tooltip" data-placement="top" title="Spray Can"
-            />
-          </div> 
-          <!-- The draw-stamping button  -->
-          <div class="button" id="btn-stamping">
-            <img
-              class="img-fluid icons"
-              src="img/canvasicons-stamp.png"
-              alt="stamping"
-              id="stamping"
-              data-toggle="tooltip" data-placement="top" title="Stamp"
-            />
-          </div>  
           <!-- The Stright-Line button  -->
           <div class="button" id="btn-strline">
             <img
@@ -106,36 +86,6 @@
               data-toggle="tooltip" data-placement="top" title="Arc"
             />
           </div>
-          <!-- The drawing bezier curve button  -->
-          <div class="button" id="btn-drawing-bezier">
-            <img
-              class="img-fluid icons"
-              src="img/canvasicons-bezier.png"
-              alt="bezier-curve"
-              id="drawing-bezier-curve"
-              data-toggle="tooltip" data-placement="top" title="Bezier Curve"
-            />
-          </div> 
-          <!-- The Polygon button  -->
-          <div class="button" id="btn-drawing-polygon">
-            <img
-              class="img-fluid icons"
-              src="img/canvasicons-polygon.png"
-              alt="polygon"
-              id="drawing-polygon"
-              data-toggle="tooltip" data-placement="top" title="Regular Polygon"
-            />
-          </div>
-          <!-- The Irregular Polygon button  -->
-          <div class="button" id="btn-drawing-irregular-polygon">
-            <img
-              class="img-fluid icons"
-              src="img/canvasicons-irregular-polygon.png"
-              alt="polygon"
-              id="drawing-irregular-polygon"
-              data-toggle="tooltip" data-placement="top" title="Irregular Polygon"
-            />
-          </div>
           <!-- The Text button  -->
           <div class="button" id="btn-text">
             <img
@@ -146,24 +96,34 @@
               data-toggle="tooltip" data-placement="top" title="Text"
             />
           </div> 
-          <!-- The download button -->
-          <div class="button" id="btn-download">
-            <img 
-            class="img-fluid icons-exception" 
-            src="img/canvasicons-download.png"
-            alt="download"
-            id="download"
-            data-toggle="tooltip" data-placement="top" title="Download Canvas"
+          <!-- Fill -->
+          <div class="button" id="btn-fill">
+            <img
+              class="img-fluid icons"
+              src="img/canvasicons-bucket.png"
+              alt="fill"
+              id="fill"
+              data-toggle="tooltip" data-placement="top" title="Bucket Fill"
             />
-          </div> 
-        <!-- The Upload button -->
-        <div class="button" id="btn-upload">
-          <img 
-          class="img-fluid icons-exception" 
-          src="img/canvasicons-upload.png"
-          alt="upload"
-          id="imageLoader"
-          data-toggle="tooltip" data-placement="top" title="Upload Image"
+          </div>
+          <!-- Eyedrop -->
+          <div class="button" id="btn-eyedrop">
+            <img
+              class="img-fluid icons"
+              src="img/eyedropper.png"
+              alt="eyedrop"
+              id="eyedrop"
+              data-toggle="tooltip" data-placement="top" title="Eyedropper"
+            />
+          </div>            
+        <!-- The eraser button  -->
+        <div class="button" id="btn-eraser">
+          <img
+            class="img-fluid icons"
+            src="img/canvasicons-eraser.png"
+            alt="eraser"
+            id="eraser"
+            data-toggle="tooltip" data-placement="top" title="Eraser"
           />
         </div> 
         <!-- The Undo -->
@@ -185,27 +145,27 @@
           id="redo"
           data-toggle="tooltip" data-placement="top" title="Redo"
           />
-        </div> 
-          <!-- Fill -->
-          <div class="button" id="btn-fill">
-            <img
-              class="img-fluid icons"
-              src="img/canvasicons-bucket.png"
-              alt="fill"
-              id="fill"
-              data-toggle="tooltip" data-placement="top" title="Bucket Fill"
-            />
-          </div>  
-        <!-- The eraser button  -->
-        <div class="button" id="btn-eraser">
-          <img
-            class="img-fluid icons"
-            src="img/canvasicons-eraser.png"
-            alt="eraser"
-            id="eraser"
-            data-toggle="tooltip" data-placement="top" title="Eraser"
+        </div>         
+        <!-- The download button -->
+        <div class="button" id="btn-download">
+          <img 
+          class="img-fluid icons-exception" 
+          src="img/canvasicons-download.png"
+          alt="download"
+          id="download"
+          data-toggle="tooltip" data-placement="top" title="Download Canvas"
           />
         </div> 
+        <!-- The Upload button -->
+        <div class="button" id="btn-upload">
+        <img 
+        class="img-fluid icons-exception" 
+        src="img/canvasicons-upload.png"
+        alt="upload"
+        id="imageLoader"
+        data-toggle="tooltip" data-placement="top" title="Upload Image"
+        />    
+          </div>       
           <!-- UTILITIES -->
           <!-- Clear All -->
           <div class="button" id="btn-clear-canvas">
@@ -256,8 +216,6 @@
                 <option value="64">XXL</option>>
               </select>
               <!-- Polygon Sides -->
-              <label for="poly-sides">Polygon Sides</label>
-              <input type="number" id="poly-sides" name="Polygon Sides" min="1" max="999" value="5">
             <input type="file" id="upload" name="imageLoader"style="display: none" size="10"/> 
             </div>
       </div>

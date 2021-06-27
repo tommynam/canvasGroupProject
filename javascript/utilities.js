@@ -5,7 +5,6 @@ let canvasSettings = {
   colorFill: $("#fill-color").val(),
   strokeSize: $("#stroke-size").val(),
   textSize: $("#text-size").val(),
-  polygonSides: $("#poly-sides").val(),
 };
 
 $("#stroke-color")[0].oninput = function () {
@@ -19,10 +18,6 @@ $("#fill-color")[0].oninput = function () {
 
 $("#stroke-size")[0].oninput = function () {
   canvasSettings.strokeSize = this.value;
-};
-
-$("#poly-sides")[0].oninput = function () {
-  canvasSettings.polygonSides = this.value;
 };
 
 $("#text-size")[0].oninput = function () {
@@ -64,6 +59,7 @@ $("#upload").change((e) => {
   };
   reader.readAsDataURL(e.target.files[0]);
 });
+
 //Highlight selected button/ DOM
 $(".icons").click(function (e) {
   $(".icons").removeClass("btn-active");

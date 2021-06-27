@@ -24,9 +24,9 @@ Canvas Group Project for - Tommy, Chili, Candice (Jamie?)
 [X] Insert Text                                - Chili 
 [] Save Image Button (Download to Computer)   - Tommy
 [] Filters                                    - Tommy 
-[] Fill Bucket                                - Chili
-[] Eyedrop(pick up colors)
-[] Download Image                             - Candice
+[X] Fill Bucket                                - Chili
+[] Eyedrop(pick up colors)                    - Tommy
+[x] Download Image                             - Candice
 [] Canvas Linked to FireBase for Download     - Tommy
 [] Zoom In - Zoom Out                         - Chili
 [] Drag and drop / Select Function            - Tommy
