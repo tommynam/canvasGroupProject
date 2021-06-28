@@ -56,38 +56,6 @@ $("#canvas-draft").mouseenter(function (e) {
   currentFunction.onMouseEnter([mouseX, mouseY], e);
 });
 
-window.addEventListener("keydown", (e) => {
-  if (e.key == "Escape") {
-    resetDrawing = true;
-    currentFunction.reset();
-  }
-  if (e.key == "Shift") {
-    regularFix = true;
-  }
-  if (e.key == "Meta" || e.key == "Control") {
-    centerFix = true;
-  }
-  if (e.key == "Alt" || e.key == "c") {
-    fillStyle = true;
-  }
-
-  if (e.key == "Enter") {
-    currentFunction.join();
-  }
-});
-
-window.addEventListener("keyup", (e) => {
-  if (e.key == "Shift") {
-    regularFix = false;
-  }
-  if (e.key == "Meta" || e.key == "Control") {
-    centerFix = false;
-  }
-  if (e.key == "Alt" || e.key == "c") {
-    fillStyle = false;
-  }
-});
-
 class PaintFunction {
   constructor() {}
   onMouseDown() {}
