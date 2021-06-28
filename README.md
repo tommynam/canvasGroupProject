@@ -61,6 +61,14 @@ Pressing upload, a img file is uploaded in the middle of canvas board.
 
 Pressing the clear canvas button, the whole Canvas board is cleaned up.
 
-14. Stroke Color
+14. Stroke Color / Fill Color
 
-By clicking the color box, 
+By clicking the color box, select the color for Stroke / Fill.
+
+15. Stroke Size
+
+Select a size of stroke in selecting bar, size of stroke will change according to selected size.
+
+16. Text Size
+
+Select a size of font in selecting bar, size of text will change according to selected size.
