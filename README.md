@@ -18,7 +18,7 @@ Canvas Group Project for - Tommy, Chili, Candice
 [X] Drawing Rectangle                          - Candice
 [X] Drawing Cirlce                             - Candice
 [X] Drawing Straight Line                      - Chili
-[] Drawing Curved Line                        - Tommy
+[x] Drawing Curved Line                        - Tommy
 [x] Eraser (Point and drag)                    - Tommy
 [X] Undo-Redo Button                           - Candice
 [X] Insert Text                                - Chili 
