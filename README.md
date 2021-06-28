@@ -1,4 +1,4 @@
-# Canvas User Mannul
+# Canvas User Manual
 Canvas Group Project for - Tommy & Candice
 
 Welcome to our CANVAS, you can draw whatever you like here on the big white canvas board on the right hand side.
